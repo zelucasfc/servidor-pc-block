@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: pc-lock-server
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python servidor.py"
